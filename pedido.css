@@ -1,0 +1,137 @@
+/* Reseta margens e espaçamentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+.page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contêiner de pedidos */
+.orders-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Item do pedido */
+.order-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do prato */
+.order-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Detalhes do pedido */
+.order-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Nome do prato */
+.order-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Botão de remover */
+.remove-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #e43e3f;
+}
+
+/* Botões de ação */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.finalize-btn,
+.cancel-btn {
+  width: 45%;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finalize-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.finalize-btn:hover {
+  background-color: #218838;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
+
+
+.logo {
+  order: 1;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo{
+  position: absolute;
+  top: 5px; 
+  left: 50px; 
+  padding: 5px;
+  color: black;
+  font-weight:300px;
+}

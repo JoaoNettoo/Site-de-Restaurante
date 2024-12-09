@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedido.css">
+    <title>Pedidos</title>
+</head>
+
+<body>
+    <nav >
+        <a href="index.html"><h1 class="logo">Fome de Quê?</h1></a>
+    </nav>
+    <header>
+        <h1 class="page-title">Pedidos</h1>
+    </header>
+    <main>
+        <section class="orders-container">
+            <div id="conteudoRecuperado"></div>
+            <div id="carrinho"></div>
+            <p>Total: R$ <span id="total">0</span></p>
+
+
+
+            <!-- Exemplo de item do pedido -->
+            <div class="order-item">
+                <img src="exemplo-prato.jpg" alt="Prato exemplo" class="order-image">
+                <div class="order-details">
+                    <h3 class="order-name">Nome do Prato</h3>
+                    <button class="remove-btn">Remover</button>
+                </div>
+            </div>
+            <!-- Adicione outros itens aqui -->
+        </section>
+        <div class="action-buttons">
+            <button class="finalize-btn">Finalizar Pedido</button>
+            <button class="cancel-btn">Cancelar Pedido</button>
+        </div>
+    </main>
+
+</body>
+
+</html>

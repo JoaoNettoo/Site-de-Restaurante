@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="carrinho.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <title>Fome de Quê?</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#food">Destaques</a></li>
+                <li><a href="#food-menu">Cardápio</a></li>
+                <li><a href="#testimonials">Avaliações</a></li>
+                <li><a href="#contact">Login</a></li>
+                <li><a href="pedido.html" id="salvar" >Pedidos</a></li>
+            </ul>
+            <h1 class="logo">Fome de Quê?</h1>
+        </div>
+    </nav>
+      <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+          <h1 class="main-title" id="home">Vem matar essa fome com a gente</h1>
+          <a href="#food-menu" class="btn btn-primary">Cardápio</a>
+        </div>
+      </section>
+  
+      <section id="about">
+        <div class="about-wrapper container">
+          <div class="about-text">
+            <p class="small">Sobre Nós</p>
+            <h2>Há 5 anos que fazemos as melhores refeições da região.</h2>
+            <p>
+              No Fome de Quê?, nossa missão é oferecer pratos deliciosos preparados com ingredientes frescos
+              e de alta qualidade. Valorizamos o sabor autêntico e o cuidado em cada detalhe, proporcionando uma experiência
+              gastronômica única. Seja para um almoço rápido ou um jantar especial, estamos aqui para servir 
+              o melhor da culinária com paixão e dedicação.
+            </p>
+          </div>
+          <div class="about-img">
+            <img src="imagem11.jpeg" alt="food" />
+          </div>
+        </div>
+      </section>
+      <section id="food">
+        <h2>Nossos queridinhos</h2>
+        <div class="food-container container">
+          <div class="food-type fruite">
+            <div class="img-container">
+              <img src="imagem09.png" alt="Espaguete" />
+              <div class="img-content">
+                <h3>Espaguete</h3>
+                <button onclick="adicionarAoCarrinho(1, 'Espaguete', 18, 'imagem09.png')" class="btn btn-primary">Adicionar pedido</button>
+                <!--<a href="pedido.html" class="btn btn-primary">Adicionar pedido</a>-->
+                
+              </div>
+            </div>
+          </div>
+          <div class="food-type vegetable">
+            <div class="img-container">
+              <img src="imagem08.jpeg" alt="Camarão Empanado" />
+              <div class="img-content">
+                <h3>Camarão Empanado</h3>
+                <button onclick="adicionarAoCarrinho(2, 'Camarão Empanado', 25, 'imagem08.jpeg')" class="btn btn-primary">Adicionar pedido</button>
+                <!--<a href="pedido.html" class="btn btn-primary">Adicionar pedido</a>-->
+              
+              </div>
+            </div>
+          </div>
+          <div class="food-type grin">
+            <div class="img-container">
+              <img src="imagem10.jpeg" alt="Camarão Grelhado" />
+              <div class="img-content">
+                <h3>Camarão Grelhado</h3>
+                <button onclick="adicionarAoCarrinho(3, 'Camarão Grelhado', 20, 'imagem10.jpeg')" class="btn btn-primary">Adicionar pedido</button>
+                <!--<a href="pedido.html" class="btn btn-primary">Adicionar pedido</a>-->
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="food-menu">
+        <h2 class="food-menu-heading">Cardápio</h2>
+        <div class="food-menu-container container">
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="imagem2.jfif" alt="Maminha Grelhada" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-titile">Maminha Grelhada</h2>
+              <p>Suculenta e macia, nossa maminha grelhada é temperada
+                 na medida certa e preparada com perfeição. Acompanhada de 
+                 guarnições frescas, é uma escolha irresistível 
+                 para quem aprecia um bom corte de carne.
+              </p>
+              <p class="food-price">Preço: R$ 85</p>
+              <button onclick="adicionarAoCarrinho(4, 'Maminha Grelhada', 85, 'imagem2.jfif')" class="btn btn-primary">Adicionar pedido</button>
+              
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img
+                src="imagem3.jpeg"
+                alt="Carbonara"
+              />
+            </div>
+            <div class="food-description">
+              <h2 class="food-titile"> Carbonara</h2>
+              <p>Carbonara de camarão com fettuccine e molho
+                 feito com gema de ovo,
+                 queijo parmesão, creme de leite fresco, 
+                 pimenta do reino, bacon e finalizado com farofa crocante de panko.
+              </p>
+              <p class="food-price">Preço: 275</p>
+              <button onclick="adicionarAoCarrinho(5, 'Carbonara', 275, 'imagem3.jpeg')" class="btn btn-primary">Adicionar pedido</button>
+              
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="imagem4.jpeg" alt="Bacalhau à Gomes de Sá" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-titile">Bacalhau à Gomes de Sá</h2>
+              <p> Lombo de bacalhau em lascas
+                  assado com cebola, mix de pimentões,
+                  batatas, ovos, cebolinha, e azeitonas azapa. 
+                  Acompanha arroz de brócolis e farofa de ovos.
+              </p>
+              <p class="food-price">Preço: R$ 238</p>
+              <button onclick="adicionarAoCarrinho(6, 'Bacalhau à Gomes de Sá', 238, 'imagem4.jpeg')" class="btn btn-primary">Adicionar pedido</button>
+              
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="imagem5.jpeg" alt="Camarão Fernando de Noronha" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-titile">Camarão Fernando de Noronha</h2>
+              <p>Camarões salteados no azeite e alho, com legumes, palmito,
+                batata recheada, tomates cereja e muçarela de búfala
+                envolvidos em leve molho escalivada e azeite de ervas. 
+                Acompanha arroz de brócolis.
+              
+              </p>
+              <p class="food-price">Preço: R$ 194</p>
+              <button onclick="adicionarAoCarrinho(7, 'Camarão Fernando de Noronha', 194, 'imagem5.jpeg')" class="btn btn-primary">Adicionar pedido</button>
+              
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="imagem6.JPG" alt="Torta de Framboesa" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-titile">Torta de Framboesa</h2>
+              <p> A cheesecake, ficou perfeita! Cremosa na medida certa.
+                Acompanhada de um delicioso coulis de framboesas para 
+                equilibrar os sabores e muitas framboesas 
+                frescas para celebrar a minha colheita.
+                Não poderia pedir mais nada…apenas mais dias 
+                e sobremesas como essa.
+              </p>
+              <p class="food-price">Preço: R$ 85</p>
+              <button onclick="adicionarAoCarrinho(8, 'Torta de Framboesa', 85, 'imagem6.JPG')" class="btn btn-primary">Adicionar pedido</button>
+
+            </div>
+          </div>
+          <div class="food-menu-item">
+            <div class="food-img">
+              <img src="imagem7.JPG" alt="Sobremesa Gelada de Frutas" />
+            </div>
+            <div class="food-description">
+              <h2 class="food-titile">Sobremesa Gelada de Frutas</h2>
+              <p>A sobremesa é uma das horas mais esperadas 
+                das refeições. Ela completa os sabores dos 
+                pratos com aquele toque adocicado e prazeroso 
+                ao paladar. Mas, até mesmo nesse momento, 
+                nós precisamos ter atenção com a nossa 
+                alimentação.
+              </p>
+              <p class="food-price">Preço: R$ 123</p>
+              <button onclick="adicionarAoCarrinho(9, 'Sobremesa Gelada de Frutas', 123, 'imagem7.JPG')" class="btn btn-primary">Adicionar pedido</button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <h2 class="testimonial-title">O que nossos Clientes Falam sobre nós:</h2>
+        <div class="testimonial-container container">
+          <div class="testimonial-box">
+            <div class="customer-detail">
+              <div class="customer-photo">
+                <img src="imagem13.JPG" alt="" />
+                <p class="customer-name">Jorge Lee</p>
+              </div>
+            </div>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p class="testimonial-text">
+              Comida maravilhosa e atendimento maravilhoso.
+              Volto sempre que estou na cidade.
+            </p>
+          </div>
+          <div class="testimonial-box">
+            <div class="customer-detail">
+              <div class="customer-photo">
+                <img
+                  src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg"
+                  alt=""
+                />
+                <p class="customer-name">Amelia Gonçalves</p>
+              </div>
+            </div>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p class="testimonial-text">
+              Amei o restaurante, a comida, e todo atendimento.
+              Espero sempre voltar neste lugar maravilhoso!
+            </p>
+          </div>
+          <div class="testimonial-box">
+            <div class="customer-detail">
+              <div class="customer-photo">
+                <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+                <p class="customer-name">João Lucas Silva</p>
+              </div>
+            </div>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p class="testimonial-text">
+              Excelente ambiente, com variedade de comidas
+              deliciosas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container container">
+          <div class="contact-img">
+            <img src="imagem12.JPG" alt="" />
+          </div>
+  
+          <div class="form-container">
+            <form id="loginForm" onsubmit="return validaForms()">
+              <h2>Login:</h2>
+              <input type="text" id="email" placeholder="E-Mail" />
+              <span id="emailErro" class="erro"></span>
+              
+              <div class="senha-container">
+                <input type="password" id="senha" placeholder="Senha">
+                <span class="RevelaSenha" onclick="RevelaSenha()"><img src="../Nova pasta/icons8-visível-24.png" alt=""></span>
+              </div>
+              <span id="senhaErro" class="erro"></span><br>
+              <button type="submit"  class="btn btn-primary" >LOGIN</button>
+              <!--<a href="#" class="btn btn-primary">Login</a> -->
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <h2>carrinho</h2>
+      <div id="carrinho"></div>
+      <p>Total: R$ <span id="total">0</span></p>
+      
+      <script src="carrinho.js">
+          document.getElementById("salvar").addEventListener("click", function () {
+      // Obtendo o conteúdo do documento HTML como string
+      const conteudo = document.documentElement.outerHTML;
+      // Armazenando no Local Storage
+      localStorage.setItem("documentoCompleto", conteudo);
+      alert("Documento salvo no Local Storage!");
+    });
+      </script>
+  
+      <footer id="footer">
+        <h2>Todos os Direitos Reservados</h2>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="main.js"></script>
+</body>
+</html>
